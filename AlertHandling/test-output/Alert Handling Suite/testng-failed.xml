@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Alert Handling Suite]">
+  <listeners>
+    <listener class-name="com.alerthandling.utils.ExtendReport"/>
+  </listeners>
+  <test thread-count="5" name="Browser Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.alerthandling.tests.AlertHandlingTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testEmptySignIn"/>
+        </methods>
+      </class> <!-- com.alerthandling.tests.AlertHandlingTests -->
+    </classes>
+  </test> <!-- Browser Test(failed) -->
+</suite> <!-- Failed suite [Alert Handling Suite] -->

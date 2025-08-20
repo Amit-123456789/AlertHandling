@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Alert Handling Suite" parallel="false">
+
+   <listeners>
+    <listener class-name="com.alerthandling.utils.ExtendReport"/>
+  </listeners>
+
+    <test name="Browser Test">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.alerthandling.tests.AlertHandlingTests"/>
+        </classes>
+    </test>
+    
+   
+</suite>
